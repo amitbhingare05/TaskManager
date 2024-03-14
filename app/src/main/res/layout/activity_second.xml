@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <ImageView
+        android:id="@+id/imgdeaulticon"
+        android:layout_width="134dp"
+        android:layout_height="159dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextCategory"
+        android:layout_width="216dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="36dp"
+        android:hint="Category"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toEndOf="@id/imgdeaulticon"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTitle"
+        android:layout_width="219dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="36dp"
+        android:hint="Task Title"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.552"
+        app:layout_constraintStart_toEndOf="@id/imgdeaulticon"
+        app:layout_constraintTop_toBottomOf="@id/editTextCategory" />
+
+
+    <EditText
+        android:id="@+id/editduedate"
+        android:layout_width="213dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="360dp"
+        android:layout_marginEnd="180dp"
+        android:hint="Due date"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imagebuttondatepicker"
+        android:layout_width="59dp"
+        android:layout_height="47dp"
+        android:src="@android:drawable/ic_menu_my_calendar"
+        app:layout_constraintStart_toEndOf="@id/editduedate"
+        app:layout_constraintTop_toTopOf="@id/editduedate" />
+
+    <Button
+        android:id="@+id/btnsaved"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="440dp"
+        android:text="SAVE"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/imgdeaulticon"
+        app:layout_constraintTop_toBottomOf="@id/editTextTitle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
